@@ -48,8 +48,8 @@ const (
 var inameMap = map[ConnectionInterface]string{
 	Cellular:    "CELLULAR",
 	CellularLte: "CELLULAR-LTE",
-	Docsis:      "Docsis",
-	Dsl:         "Dsl",
+	Docsis:      "DOCSIS",
+	Dsl:         "DSL",
 	Lan:         "LAN",
 	LanEthernet: "LAN-ETHERNET",
 	LanWifi:     "LAN-WIFI",
