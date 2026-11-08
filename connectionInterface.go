@@ -100,8 +100,7 @@ func ConvertCpeInterface(iName string, model string) ConnectionInterface {
 		rv = LanWifi
 	case "wwan0":
 		rv = Cellular
-		switch strings.ToLower(model) {
-		case "wnxl11bwl":
+		if strings.EqualFold(model, "wnxl11bwl") {
 			rv = CellularLte
 		}
 	}
